@@ -8,6 +8,7 @@ set relativenumber
 let mapleader = ","
 
 inoremap jk <ESC>
+tnoremap jk <C-w>N
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
