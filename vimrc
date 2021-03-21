@@ -15,3 +15,8 @@ endfunction
 
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
+source $HOME/.vim/ale.vim
+
+if has("gui_macvim")
+  source $HOME/.vim/mac.vim
+endif
