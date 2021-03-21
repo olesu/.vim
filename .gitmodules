@@ -13,6 +13,3 @@
 [submodule "pack/plugins/start/vim-solarized"]
 	path = pack/plugins/start/vim-solarized
 	url = https://github.com/lifepillar/vim-solarized8.git
-[submodule "pack/plugins/opt/vim-scriptease"]
-	path = pack/plugins/opt/vim-scriptease
-	url = https://github.com/tpope/vim-scriptease.git
