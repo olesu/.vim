@@ -1,5 +1,10 @@
 # Vim Configuration
 
+## Dependencies
+
+- bat (`brew install bat`), syntax highlight in fzf preview windows
+- fzf (`brew install fzf`), instead of `fzf#install` hook
+
 ## Tips
 
 Redirect ex command output into a register
