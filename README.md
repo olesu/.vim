@@ -11,3 +11,9 @@ https://vim.fandom.com/wiki/Capture_ex_command_output
 :set guifont?
 " now the output from 'set guifont?' is available in register 'a'
 ```
+
+Inspect the runtime path
+
+```vim
+echo join(split(&runtimepath, ','), "\n")
+```
