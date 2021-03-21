@@ -11,4 +11,3 @@ inoremap jk <ESC>
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
-
