@@ -34,8 +34,10 @@ function! PackInit() abort
 
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
+  call minpac#add('tpope/vim-sensible')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+  call minpac#add('dense-analysis/ale')
   call minpac#add('lifepillar/vim-solarized8')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')

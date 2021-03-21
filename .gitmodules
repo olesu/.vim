@@ -1,6 +1,3 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/dense-analysis/ale.git
-[submodule "pack/plugins/start/vim-sensible"]
-	path = pack/plugins/start/vim-sensible
-	url = https://github.com/tpope/vim-sensible.git
