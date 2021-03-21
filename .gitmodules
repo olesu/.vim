@@ -4,6 +4,3 @@
 [submodule "pack/plugins/start/vim-sensible"]
 	path = pack/plugins/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "pack/plugins/start/vim-solarized"]
-	path = pack/plugins/start/vim-solarized
-	url = https://github.com/lifepillar/vim-solarized8.git
