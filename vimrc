@@ -13,12 +13,14 @@ function! PackInit() abort
   call minpac#add('tyru/open-browser.vim')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
+  call minpac#add('fatih/vim-go', {'do': ':GoInstallBinaries'})
 endfunction
 
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
 source $HOME/.vim/ale.vim
 source $HOME/.vim/fzf.vim
+source $HOME/.vim/go.vim
 
 if has("gui_macvim")
   source $HOME/.vim/mac.vim
