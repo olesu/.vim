@@ -4,6 +4,7 @@ colorscheme solarized8
 
 set number
 set relativenumber
+set autowrite
 
 let mapleader = ","
 
