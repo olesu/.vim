@@ -4,4 +4,4 @@
   nnoremap ˙ <C-w><C-h>
 
   set background=dark
-  set guifont=JetBrainsMono-Regular:h14
+  set guifont=SourceCodeProForPowerline-Regular:h14
