@@ -14,6 +14,8 @@ endif
 set number
 set relativenumber
 set autowrite
+set noerrorbells
+set visualbell t_vb=
 
 set backupdir=/tmp//
 set directory=/tmp//
@@ -23,6 +25,7 @@ let mapleader = ","
 
 inoremap jk <ESC>
 tnoremap jk <C-w>N
+tnoremap <S-SPACE> <SPACE>
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
