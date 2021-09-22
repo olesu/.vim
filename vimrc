@@ -7,6 +7,7 @@ function! PackInit() abort
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-surround')
+  call minpac#add('tpope/vim-dispatch')
   call minpac#add('preservim/nerdtree')
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
   call minpac#add('dense-analysis/ale')
@@ -23,6 +24,7 @@ source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
 source $HOME/.vim/ale.vim
 source $HOME/.vim/fzf.vim
+source $HOME/.vim/nerdtree.vim
 source $HOME/.vim/go.vim
 
 if has("gui_macvim")

@@ -3,14 +3,21 @@ syntax on
 
 " true color support
 set background=dark
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-let g:solarized_termtrans = "1"
-colorscheme solarized8
+if has("termguicolors")
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+  " let g:solarized_termtrans = "1"
+  colorscheme solarized8
+endif
 
 set number
 set relativenumber
 set autowrite
+
+set backupdir=/tmp//
+set directory=/tmp//
+set undodir=/tmp//
 
 let mapleader = ","
 
@@ -19,3 +26,5 @@ tnoremap jk <C-w>N
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
+
+au BufNewFile,BufRead .envrc setlocal filetype=sh
