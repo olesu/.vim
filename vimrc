@@ -18,6 +18,8 @@ function! PackInit() abort
   call minpac#add('tyru/open-browser.vim')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
+  call minpac#add('tmhedberg/SimpylFold')
+  call minpac#add('Konfekt/FastFold')
   call minpac#add('fatih/vim-go', {'do': ':GoInstallBinaries'})
 endfunction
 
