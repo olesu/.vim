@@ -13,6 +13,7 @@ function! PackInit() abort
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
   call minpac#add('dense-analysis/ale')
   call minpac#add('lifepillar/vim-solarized8')
+  call minpac#add('tomasr/molokai')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('tyru/open-browser.vim')
