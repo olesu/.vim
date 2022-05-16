@@ -7,7 +7,6 @@ function! PackInit() abort
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('tpope/vim-fugitive')
-  call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('preservim/nerdtree')
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
