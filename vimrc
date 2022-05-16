@@ -14,6 +14,7 @@ function! PackInit() abort
   call minpac#add('vim-syntastic/syntastic')
   call minpac#add('nvie/vim-flake8')
   call minpac#add('lifepillar/vim-solarized8')
+  call minpac#add('tomasr/molokai')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('tyru/open-browser.vim')
