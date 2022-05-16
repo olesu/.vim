@@ -39,8 +39,8 @@ nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
 
 " enable folding
-set foldmethod=indent
-set foldlevel=99
+set foldmethod=syntax
+set foldcolumn=4
 
 " enable folding with the spacebar
 nnoremap <space> za
