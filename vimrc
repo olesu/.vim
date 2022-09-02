@@ -23,6 +23,7 @@ function! PackInit() abort
   call minpac#add('Konfekt/FastFold')
   call minpac#add('vim-scripts/indentpython.vim')
   call minpac#add('Valloric/YouCompleteMe', {'do': '!./install.py --all'})
+  call minpac#add('fatih/vim-go')
 endfunction
 
 source $HOME/.vim/minpac.vim
