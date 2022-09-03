@@ -24,6 +24,7 @@ function! PackInit() abort
   call minpac#add('vim-scripts/indentpython.vim')
   call minpac#add('Valloric/YouCompleteMe', {'do': '!./install.py --all'})
   call minpac#add('fatih/vim-go')
+  call minpac#add('preservim/tagbar')
 endfunction
 
 source $HOME/.vim/minpac.vim
