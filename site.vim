@@ -21,6 +21,7 @@ set visualbell t_vb=
 set backupdir=/tmp//
 set directory=/tmp//
 set undodir=/tmp//
+set undofile
 
 let mapleader = ","
 

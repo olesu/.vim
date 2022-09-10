@@ -15,3 +15,8 @@ endfunction
 nmap <F9> :<C-u>call <SID>build_go_files()<CR>
 nmap <C-S-r> <Plug>(go-run)
 nmap <C-S-t> <Plug>(go-test)
+
+" spaces are allowed after tabs, but not in between
+" this algorithm works well with programming styles that use tabs for
+" indentation and spaces for alignment
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
