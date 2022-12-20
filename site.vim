@@ -32,11 +32,6 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>
 
 au BufNewFile,BufRead .envrc setlocal filetype=sh
-" split navigation
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
 
 " enable folding
 set foldmethod=syntax
