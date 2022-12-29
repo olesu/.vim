@@ -12,13 +12,12 @@ function! PackInit() abort
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
   call minpac#add('nvie/vim-flake8')
   call minpac#add('lifepillar/vim-solarized8')
-  call minpac#add('tomasr/molokai')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
-  call minpac#add('tyru/open-browser.vim')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('vim-scripts/indentpython.vim')
+  call minpac#add('Valloric/YouCompleteMe', {'do': '!./install.py --all'})
   call minpac#add('fatih/vim-go')
   call minpac#add('dense-analysis/ale')
 endfunction
@@ -34,3 +33,6 @@ source $HOME/.vim/ale.vim
 if has("gui_macvim")
   source $HOME/.vim/mac.vim
 endif
+let g:ale_hover_to_preview = 1
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc

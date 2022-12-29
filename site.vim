@@ -1,4 +1,5 @@
 let python_highlight_all=1
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 filetype plugin indent on
 syntax on
@@ -21,6 +22,7 @@ set visualbell t_vb=
 set backupdir=/tmp//
 set directory=/tmp//
 set undodir=/tmp//
+set undofile
 
 let mapleader = ","
 
@@ -40,6 +42,8 @@ set foldcolumn=4
 " enable folding with the spacebar
 nnoremap <space> za
 
+augroup vimrcSite
+au!
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -49,19 +53,11 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.ts,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match Error /\s\+$/
+augroup END
 
-"python with virtualenv support
-py3 << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
