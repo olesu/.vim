@@ -5,6 +5,8 @@
 - bat (`brew install bat`), syntax highlight in fzf preview windows
 - fzf (`brew install fzf`), instead of `fzf#install` hook
 - ripgrep (used by fzf.vim)
+- minpac
+- cmake (for ycm)
 
 ## Tips
 
