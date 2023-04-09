@@ -35,6 +35,3 @@ source $HOME/.vim/scratch.vim
 if has("gui_macvim")
   source $HOME/.vim/mac.vim
 endif
-let g:ale_hover_to_preview = 1
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
