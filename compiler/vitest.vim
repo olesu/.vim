@@ -7,4 +7,4 @@ endif
 CompilerSet errorformat=%EAssertionError:\ %m,
       \%Z%.%#❯\ %f:%l:%c,
       \%C%.%#
-CompilerSet makeprg=npm\ run\ test\ --\ --no-color\ run
+CompilerSet makeprg=npm\ run\ test:unit\ --\ --no-color\ run
