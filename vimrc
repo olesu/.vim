@@ -17,17 +17,16 @@ function! PackInit() abort
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('vim-scripts/indentpython.vim')
-  call minpac#add('Valloric/YouCompleteMe', {'do': '!./install.py --all'})
   call minpac#add('fatih/vim-go')
-  call minpac#add('dense-analysis/ale')
+  call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 endfunction
 
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
+source $HOME/.vim/coc.vim
 source $HOME/.vim/fzf.vim
 source $HOME/.vim/fugitive.vim
 source $HOME/.vim/nerdtree.vim
-source $HOME/.vim/ale.vim
 source $HOME/.vim/go.vim
 source $HOME/.vim/scratch.vim
 

@@ -19,10 +19,15 @@ set autowrite
 set noerrorbells
 set visualbell t_vb=
 
+set nobackup
+set nowritebackup
 set backupdir=/tmp//
 set directory=/tmp//
 set undodir=/tmp//
 set undofile
+
+set updatetime=300
+set signcolumn=yes
 
 let mapleader = ","
 
