@@ -5,4 +5,6 @@ setlocal softtabstop=2
 setlocal smartindent
 setlocal cindent
 
+autocmd BufWritePre * call CocAction('format')
+
 command! RunTests :compiler vitest|Dispatch
