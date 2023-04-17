@@ -65,4 +65,3 @@ au BufNewFile,BufRead *.js,*.ts,*.html,*.css
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match Error /\s\+$/
 augroup END
-
