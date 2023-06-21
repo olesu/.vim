@@ -4,4 +4,4 @@ nnoremap ¬ <C-w><C-l>
 nnoremap ˙ <C-w><C-h>
 
 set background=dark
-set guifont=JetBrainsMonoNerdFontCompleteM-Regular:h14
+set guifont=JetBrainsMonoNF-Regular:h13
