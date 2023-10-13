@@ -21,6 +21,8 @@ function! PackInit() abort
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 endfunction
 
+let g:coc_node_path = '~/.nvm/versions/node/v18.16.0/bin/node'
+
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
 source $HOME/.vim/coc.vim
