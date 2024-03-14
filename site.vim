@@ -1,8 +1,12 @@
 let python_highlight_all=1
-let g:python3_host_prog = '/usr/local/bin/python3'
+let s:venv =  'venv/bin/python3'
+let g:python3_host_prog = expand('<sfile>:p:h') . '/' . s:venv
 
 filetype plugin indent on
 syntax on
+
+let &shell='/bin/zsh'
+let &shellcmdflag='-i -c'
 
 " true color support
 if has("termguicolors")
@@ -10,7 +14,7 @@ if has("termguicolors")
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
   let g:solarized_termtrans = "1"
-  colorscheme solarized8
+  colorscheme tokyonight-night
 endif
 
 set number

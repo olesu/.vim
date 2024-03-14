@@ -12,12 +12,12 @@ function! PackInit() abort
   call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
   call minpac#add('nvie/vim-flake8')
   call minpac#add('lifepillar/vim-solarized8')
+  call minpac#add('folke/tokyonight.nvim')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('vim-scripts/indentpython.vim')
-  call minpac#add('fatih/vim-go')
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 endfunction
 
@@ -27,7 +27,7 @@ source $HOME/.vim/coc.vim
 source $HOME/.vim/fzf.vim
 source $HOME/.vim/fugitive.vim
 source $HOME/.vim/nerdtree.vim
-source $HOME/.vim/go.vim
+" source $HOME/.vim/go.vim
 source $HOME/.vim/scratch.vim
 
 " gui_macvim seems to be set on Neovim/Mac
