@@ -25,7 +25,7 @@ function! GetNodePath(dir, script='node_path.sh')
   return substitute(system(a:dir . '/' . a:script), '\n', '', 'g')
 endfunction
 
-let g:coc_node_path = GetNodePath(expand('<sfile>:p:h'))
+let g:coc_node_path = GetNodePath(expand('~/.vim'))
 
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
