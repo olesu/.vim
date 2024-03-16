@@ -39,3 +39,5 @@ endif
 if has("gui_macvim")
   source $HOME/.vim/mac.vim
 endif
+
+echo ">^.^<"
