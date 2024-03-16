@@ -5,9 +5,6 @@ let g:python3_host_prog = expand('<sfile>:p:h') . '/' . s:venv
 filetype plugin indent on
 syntax on
 
-let &shell='/bin/zsh'
-let &shellcmdflag='-i -c'
-
 " true color support
 if has("termguicolors")
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
