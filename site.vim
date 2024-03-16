@@ -36,8 +36,6 @@ set signcolumn=yes
 let mapleader = ","
 
 inoremap jk <ESC>
-tnoremap jk <C-w>N
-tnoremap <S-SPACE> <SPACE>
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>ev :edit $MYVIMRC<CR>

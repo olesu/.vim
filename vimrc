@@ -31,6 +31,9 @@ source $HOME/.vim/fugitive.vim
 source $HOME/.vim/nerdtree.vim
 " source $HOME/.vim/go.vim
 source $HOME/.vim/scratch.vim
+if has("nvim")
+  source $HOME/.vim/neo.vim
+endif
 
 " gui_macvim seems to be set on Neovim/Mac
 if has("gui_macvim")
