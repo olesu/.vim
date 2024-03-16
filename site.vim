@@ -69,3 +69,6 @@ augroup END
 nnoremap - ddp
 nnoremap _ ddkP
 
+" uppercase current word
+inoremap <C-u> <Esc>lviwU
+nnoremap <C-u> viwU
