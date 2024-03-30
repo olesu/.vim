@@ -21,11 +21,11 @@ function! PackInit() abort
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 endfunction
 
-function! GetNodePath(dir, script='node_path.sh')
+function! GetNodePath(dir=expand('~/.vim'), script='node_path.sh')
   return substitute(system(a:dir . '/' . a:script), '\n', '', 'g')
 endfunction
 
-let g:coc_node_path = GetNodePath(expand('~/.vim'))
+let g:coc_node_path = GetNodePath()
 
 source $HOME/.vim/minpac.vim
 source $HOME/.vim/site.vim
@@ -35,6 +35,7 @@ source $HOME/.vim/fugitive.vim
 source $HOME/.vim/nerdtree.vim
 " source $HOME/.vim/go.vim
 source $HOME/.vim/scratch.vim
+source $HOME/.vim/abbrevs.vim
 if has("nvim")
   source $HOME/.vim/neo.vim
 endif

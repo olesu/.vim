@@ -31,11 +31,12 @@ set updatetime=300
 set signcolumn=yes
 
 let mapleader = ","
+let maplocalleader = "\\"
 
 inoremap jk <ESC>
 
 nnoremap <Leader>sv :source $MYVIMRC<CR>
-nnoremap <Leader>ev :edit $MYVIMRC<CR>
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
 
 au BufNewFile,BufRead .envrc setlocal filetype=sh
 
@@ -57,6 +58,8 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
+au BufWritePre *.py call CocAction('format')
+
 au BufNewFile,BufRead *.js,*.ts,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
@@ -69,6 +72,3 @@ augroup END
 nnoremap - ddp
 nnoremap _ ddkP
 
-" uppercase current word
-inoremap <C-u> <Esc>lviwU
-nnoremap <C-u> viwU
