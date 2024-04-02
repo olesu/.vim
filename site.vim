@@ -1,6 +1,8 @@
-let python_highlight_all=1
-let s:venv =  'venv/bin/python3'
-let g:python3_host_prog = expand('<sfile>:p:h') . '/' . s:venv
+function! Python3HostProg(venv = 'venv/bin/python3')
+  return expand('~/.vim') . '/' . a:venv
+endfunction
+
+let g:python3_host_prog = Python3HostProg()
 
 filetype plugin indent on
 syntax on
@@ -65,7 +67,7 @@ au BufNewFile,BufRead *.js,*.ts,*.html,*.css
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match Error /\s\+$/
+au BufRead,BufNewFile *.py let python_highlight_all=1
 augroup END
 
 " move lines up and down
