@@ -38,6 +38,7 @@ source $HOME/.vim/scratch.vim
 source $HOME/.vim/abbrevs.vim
 if has("nvim")
   source $HOME/.vim/neo.vim
+  source $HOME/.vim/provision_dev.vim
 endif
 
 " gui_macvim seems to be set on Neovim/Mac

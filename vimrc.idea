@@ -1,0 +1,4 @@
+inoremap jk <ESC>
+if has("nvim")
+  tnoremap jk <C-\><C-N>
+endif
