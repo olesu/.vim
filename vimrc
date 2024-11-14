@@ -19,6 +19,7 @@ function! PackInit() abort
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('vim-scripts/indentpython.vim')
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
+  call minpac#add('github/copilot.vim')
 endfunction
 
 function! GetNodePath(dir=expand('~/.vim'), script='node_path.sh')

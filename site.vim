@@ -60,7 +60,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
 
-au BufWritePre *.py call CocAction('format')
+" au BufWritePre *.py call CocAction('format')
 
 au BufNewFile,BufRead *.js,*.ts,*.html,*.css
     \ set tabstop=2 |
