@@ -74,3 +74,44 @@ augroup END
 nnoremap - ddp
 nnoremap _ ddkP
 
+" Function to set the tab's working directory as a tab variable
+function! SetTabDir()
+  let tabnr = tabpagenr()
+  let dir = getcwd()
+  call settabvar(tabnr, 'cwd', dir)
+endfunction
+
+" Automatically set the tab's working directory when changing tabs
+autocmd TabEnter * call SetTabDir()
+
+" Function to get the tab's working directory
+function! MyTabLabel(n)
+  let dir = gettabvar(a:n, 'cwd', '')
+  return fnamemodify(dir, ':t')
+endfunction
+
+" Function to build the tabline
+function! MyTabLine()
+  let result = ''
+  for i in range(tabpagenr('$'))
+    if i + 1 == tabpagenr()
+      let result .= '%#TabLineSel#'
+    else
+      let result .= '%#TabLine#'
+    endif
+
+    let result .= '%' .. (i + 1) .. 'T'
+    let tabname = MyTabLabel(i + 1)
+    let result .= ' ' .. tabname .. ' '
+  endfor
+
+  let result .= '%#TabLineFill#%T'
+
+  if tabpagenr('$') > 1
+    let result .= '%=%#TabLine#%999Xclose'
+  endif
+
+  return result
+endfunction
+
+set tabline=%!MyTabLine()
