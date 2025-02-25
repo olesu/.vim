@@ -7,3 +7,4 @@ pycodestyle==2.12.1
 pynvim==0.5.2
 setuptools==75.5.0
 tomli==2.1.0
+neovim-remote==2.5.1

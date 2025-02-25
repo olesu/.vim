@@ -1,3 +1,4 @@
+let $NODE_EXTRA_CA_CERTS = '/opt/homebrew/etc/ca-certificates/cert.pem'
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
 set encoding=utf-8
