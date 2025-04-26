@@ -21,6 +21,7 @@ set relativenumber
 set autowrite
 set noerrorbells
 set visualbell t_vb=
+set clipboard=unnamedplus
 
 set nobackup
 set nowritebackup
@@ -68,6 +69,9 @@ au BufNewFile,BufRead *.js,*.ts,*.html,*.css
     \ set shiftwidth=2
 
 au BufRead,BufNewFile *.py let python_highlight_all=1
+
+au VimResized * wincmd =
+
 augroup END
 
 " move lines up and down
@@ -115,3 +119,9 @@ function! MyTabLine()
 endfunction
 
 set tabline=%!MyTabLine()
+
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
+

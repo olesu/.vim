@@ -1,10 +1,10 @@
-autopep8==2.3.1
-greenlet==3.1.1
+autopep8==2.3.2
+greenlet==3.2.1
 msgpack==1.1.0
 neovim==0.3.1
-psutil==6.1.0
-pycodestyle==2.12.1
+psutil==7.0.0
+pycodestyle==2.13.0
 pynvim==0.5.2
-setuptools==75.5.0
-tomli==2.1.0
+setuptools==79.0.1
+tomli==2.2.1
 neovim-remote==2.5.1
